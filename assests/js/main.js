@@ -4,12 +4,14 @@ const fetchApi = async (api) => {
     return result;
 };
 let products;
-const apiProductsAll = "http://localhost:3000/products";
+// const apiProductsAll = "http://localhost:3000/products";
+const apiProductsAll = "https://fe-project-mini3.netlify.app/database.json";
 let apiCurrent = apiProductsAll;
 
 displayProducts(resetApi(apiProductsAll));
 const displayCategory =
     fetchApi(apiProductsAll)
+    .then(data=>data.products)
     .then(data => {
         return data.map(item => item.category);
     })
@@ -36,6 +38,7 @@ const displayCategory =
 
 function displayProducts(api) {
     fetchApi(api)
+    .then(data=>data.products)
         .then(data => {
             let htmls = data.map(item => {
                 return `
