@@ -4,8 +4,8 @@ const fetchApi = async (api) => {
     return result;
 };
 let products;
-// const apiProductsAll = "http://localhost:3000/products";
-const apiProductsAll = "https://fe-project-mini3.netlify.app/database.json";
+const apiProductsAll = "http://localhost:3000/products";
+
 let apiCurrent = apiProductsAll;
 
 displayProducts(resetApi(apiProductsAll));
