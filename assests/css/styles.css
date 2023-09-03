@@ -1,0 +1,119 @@
+body{
+    padding:10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* category */
+.col-category {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    margin-top: 15px;
+}
+
+.category-item {
+    background: #fec456;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.category-item:hover {
+    transform: scale(1.1);
+    background: aqua;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* end category */
+
+
+/* productList */
+.productList .productItem {
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* transition:all 0.3s ease-in-out; */
+}
+
+.productList .productItem:hover {
+    transform: scale(1.1);
+}
+
+.productList .productItem .productImg {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* border-radius: 8px; */
+    padding: 5px 10px;
+}
+
+.productList .productItem .productDiscountPercentage {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #bb8416;
+    border-radius: 8px;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.productList .productItem .productContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5px;
+}
+
+.productList .productItem .productContent .productContentLeft {}
+
+.productList .productItem .productContent .productTitle {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.productList .productItem .productContent .productPrice {
+    color: red;
+    font-weight: 550;
+    font-size: 10px;
+}
+
+.productList .productItem .productContent .productStock {
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/* end productList */
+
+
+/* sectionButton */
+.button{
+    padding:10px 20px;
+    background: #fec456;
+    min-width: 84px;
+    border:none;
+    align-items: center;
+
+  }
+  .button:hover{
+    border-radius: 8px 20px;
+    background:aqua;
+    transition:all 0.3s ease-in-out;
+  }
+  #currentPage{
+    margin: 0 15px;
+  }
+/* end sectionButton */
