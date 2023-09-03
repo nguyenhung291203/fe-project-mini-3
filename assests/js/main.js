@@ -20,14 +20,17 @@ const displayCategory =
         let htmls = data.map(item => {
             return `
                     <div class="col-category">
-                        <div class="category-item" onClick="select('${apiProductsAll}?category=${item}')">${item}</div>
+                        <div class="category-item" onclick="select('${apiProductsAll}?category=${item}')">${item}</div>
                     </div>
             `;
         });
+        htmls = htmls.join("");
         const categoryListRow = document.querySelector(".category-list .row");
         categoryListRow.innerHTML = htmls;
 
     });
+
+
 
 
 
